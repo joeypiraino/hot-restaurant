@@ -1,78 +1,80 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Hot restaurant</title>
-    <!-- Latest compiled and minified CSS & JS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Hot restaurant</title>
+		<!-- Latest compiled and minified CSS & JS -->
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	</head>
 
-  <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h1>Hot restaurant</h1>
-        <h3>Current Reservations and Waiting list</h3>
-        <hr />
-        <!-- <a href="/add"
+	<body>
+		<div class="container">
+			<div class="jumbotron">
+				<h1>Hot restaurant</h1>
+				<h3>Current Reservations and Waiting list</h3>
+				<hr />
+				<!-- <a href="/add"
           ><button class="btn btn-danger btn-lg">
             <span class="fa fa-plus"></span> View tables
           </button></a
         > -->
-        <a href="/api/characters"
-          ><button class="btn btn-danger btn-lg">
-            <span class="fa fa-eye"></span> Make Reservation
-          </button></a
-        >
-      </div>
-    </div>
+				<a href="/api/characters"
+					><button class="btn btn-danger btn-lg">
+						<span class="fa fa-eye"></span> Make Reservation
+					</button></a
+				>
+			</div>
+		</div>
 
-    <div class="card">
-      <div class="card-header">
-        <h3>Current reservations</h3>
-      </div>
-      <div class="card-header">
-        <h3>Table #1</h3>
-      </div>
-      <div class="card-body">
-        <h2 id="name">ID: 101</h2>
-        <div id="clientinfo">
-          <h3>Name: <span id="name">Oscar Green</span></h3>
-          <h3>Email:<span id="email">123@gmail.com</span></h3>
-          <h3>Phone number: <span id="phone">832758232</span></h3>
-        </div>
-      </div>
-    </div>
+		<div class="card">
+			<div class="card-header">
+				<h3>Current reservations</h3>
+			</div>
+			<div class="card-header">
+				<h3>Table #1</h3>
+			</div>
+			<div class="card-body">
+				<h2 id="id-1">ID: 101</h2>
+				<div id="clientinfo">
+					<h3>Name: <span id="name">Oscar Green</span></h3>
+					<h3>Email:<span id="email">123@gmail.com</span></h3>
+					<h3>Phone number: <span id="phone">832758232</span></h3>
+				</div>
+			</div>
+		</div>
 
-    <div class="card">
-      <div class="card-header">
-        <h3>Table #2</h3>
-      </div>
-      <div class="card-body">
-        <h2 id="id">ID: 102</h2>
-        <div id="clientinfo">
-          <h3>Name: <span id="name">John Green</span></h3>
-          <h3>Email:<span id="email">john@gmail.com</span></h3>
-          <h3>Phone number: <span id="phone">713567894</span></h3>
-        </div>
-      </div>
-    </div>
+		<div class="card">
+			<div class="card-header">
+				<h3>Table #2</h3>
+			</div>
+			<div class="card-body">
+				<h2 id="id-2">ID: 102</h2>
+				<div id="clientinfo">
+					<h3>Name: <span id="name">John Green</span></h3>
+					<h3>Email:<span id="email">john@gmail.com</span></h3>
+					<h3>Phone number: <span id="phone">713567894</span></h3>
+				</div>
+			</div>
+		</div>
 
-    <div class="card">
-      <div class="card-header">
-        <h3>Waiting list</h3>
-      </div>
-      <div id="clientinfo">
-        <h3>Name: <span id="name"></span></h3>
-      </div>
-    </div>
-  </body>
+		<div class="card">
+			<div class="card-header">
+				<h3>Waiting list</h3>
+			</div>
+			<div id="clientinfo">
+				<h3>Name: <span id="name"></span></h3>
+			</div>
+		</div>
+	</body>
 </html>
