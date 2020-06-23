@@ -83,5 +83,20 @@
 				<h4>Unique ID: <span id="phone"></span></h4>
 			</div>
 		</div>
+
+		<script>
+			$.get("/api/tables/", function (data) {
+				console.log(data);
+				if (data) {
+					$("#name").text(data.name);
+					$("#email").text(data.email);
+					$("#phone").text(data.phone);
+					$("#userId").text(data.userId);
+				} else {
+					$("#name" + "'s").text("Reservation not found.");
+					$(data).hide();
+				}
+			});
+		</script>
 	</body>
 </html>
