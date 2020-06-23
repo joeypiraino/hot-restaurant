@@ -12,19 +12,16 @@ app.use(express.json());
 var tables = ["Table 1", "Table 2", "Table 3", "Table 4", "Table 5"];
 
 app.get("/", function (req, res) {
-	res.sendFile(path.join(__dirname, "view.html"));
+	res.sendFile(path.join(__dirname, "home.html"));
 });
 
-app.get("/tables", function (req, res) {
-	res.sendFile(path.join(__dirname, "resviews.html"));
+app.get("/viewres", function (req, res) {
+	res.sendFile(path.join(__dirname, "viewres.html"));
 });
-// app.get("/makeres", function (req, res) {
-//   res.sendFile(path.join(__dirname, "form.html"));
-// });
 
-app.get("/add", function (req, res) {
+app.get("/makeres", function (req, res) {
 	console.log(req);
-	res.sendFile(path.join(__dirname, "form.html"));
+	res.sendFile(path.join(__dirname, "makeres.html"));
 });
 
 app.get("/api/tables", function (req, res) {

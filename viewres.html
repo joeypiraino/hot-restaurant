@@ -1,0 +1,83 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Current Reservations</title>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="jumbotron">
+				<h1 class="text-center">Hot Restaurant</h1>
+				<h3 class="text-center">Current Reservations & Waiting List</h3>
+				<hr />
+				<a href="./home.html"
+					><button class="btn btn-dark btn-lg">
+						<span class="fa fa-home"></span>Home
+					</button></a
+				>
+				<a href="./makeres.html"
+					><button class="btn btn-danger btn-lg">
+						<span class="fa fa-plus"></span>Make Reservation
+					</button></a
+				>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header">
+				<h2>Current Reservations:</h2>
+			</div>
+			<div class="card-header">
+				<h3>Table #1</h3>
+			</div>
+			<div class="card-body">
+				<div id="clientinfo">
+					<h4>Name: <span id="name">Oscar Green</span></h4>
+					<h4>Email: <span id="email">123@gmail.com</span></h4>
+					<h4>Phone number: <span id="phone">832758232</span></h4>
+					<h4>Unique ID: <span id="userId">ogreen123</span></h4>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header">
+				<h3>Table #2</h3>
+			</div>
+			<div class="card-body">
+				<div id="clientinfo">
+					<h4>Name: <span id="name">John Green</span></h4>
+					<h4>Email: <span id="email">john@gmail.com</span></h4>
+					<h4>Phone number: <span id="phone">713567894</span></h4>
+					<h4>Unique ID: <span id="phone">johng713</span></h4>
+				</div>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-header">
+				<h2>Wait List:</h2>
+			</div>
+			<div id="clientinfo">
+				<h4>Name: <span id="name"></span></h4>
+				<h4>Email: <span id="email"></span></h4>
+				<h4>Phone number: <span id="phone"></span></h4>
+				<h4>Unique ID: <span id="phone"></span></h4>
+			</div>
+		</div>
+	</body>
+</html>
